@@ -14,10 +14,10 @@ namespace StudyCoreMvc.Controllers
     public class BooksController : Controller
     {
         private readonly StudyCoreMvcContext _context;
-        int A;
-        public BooksController(StudyCoreMvcContext context,int  a)
+      
+        public BooksController(StudyCoreMvcContext context)
         {
-            A = a;
+          
             _context = context;
         }
         //这是使用EntityFramwork的 MVC控制器添加创建的 是一套自动的增删改查
@@ -27,7 +27,7 @@ namespace StudyCoreMvc.Controllers
 
             //StudyCoreMvcContext _context = new StudyCoreMvcContext();
 
-           var book= _context.Book;
+           //var book= _context.Book;
 
             //TransactionScope sc = new TransactionScope()  // 不用ef 的时候执行的事务处理
             //using (TransactionScope sc = new TransactionScope())
@@ -50,9 +50,9 @@ namespace StudyCoreMvc.Controllers
                 //efcore中的事物
                 try
                 {
-                    _context.Book.Add(new Book { Name = "AAAAA", Content = "呢绒" });
+                    //_context.Book.Add(new Book { Name = "AAAAA", Content = "呢绒" });
                   
-                    _context.SaveChanges();
+                    //_context.SaveChanges();
                  
                     tran.Commit();
                     //throw new Exception("模拟异常");

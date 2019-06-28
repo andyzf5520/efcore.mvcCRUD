@@ -12,7 +12,7 @@
     ],
     "languageVersion": "",
     "platform": "",
-    "allowUnsafe": false,
+    "allowUnsafe": true,
     "warningsAsErrors": false,
     "optimize": false,
     "keyFile": "",

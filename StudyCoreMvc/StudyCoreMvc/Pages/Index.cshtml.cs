@@ -11,7 +11,7 @@ namespace StudyCoreMvc.Pages
     {
         public void OnGet()
         {
-
+           
         }
     }
 }
