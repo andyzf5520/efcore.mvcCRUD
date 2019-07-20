@@ -5,3 +5,4 @@ efcore.mvcCRUD
 ##   webapi 连接创建数据库sqlserver配置 
 
 + 添加增删改查Books
++ 添加官方验证字段及增删改方法
